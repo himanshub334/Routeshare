@@ -1,6 +1,6 @@
 🚗 RouteShare — Production-Grade Carpooling SaaS
 A full-stack carpooling platform built with React, TypeScript, Node.js, PostgreSQL, Redis, and Socket.IO.
-Suitable for SDE-1 resume showcase at top product companies.
+
 
 Tech Stack
 Layer	Technology
@@ -17,27 +17,7 @@ Strategy Pattern — RouteOverlapStrategy, PriceOptimizationStrategy for ride ma
 Observer Pattern — NotificationBus (EventEmitter) + Socket.IO for real-time events
 Factory Pattern — VehicleFactory for vehicle creation and validation
 Singleton Pattern — Database, RedisClient instances
-Getting Started
-With Docker (recommended)
-cp .env.example .env
-docker-compose up --build
-App will be available at:
 
-Frontend: http://localhost:3000
-API: http://localhost:4000
-Health: http://localhost:4000/health
-Local Development
-# Backend
-cd apps/api
-npm install
-npx prisma migrate dev
-npm run dev
-
-# Frontend (new terminal)
-cd apps/web
-npm install
-npm run dev
-Project Structure
 routeshare/
 ├── apps/
 │   ├── api/                   # Express + Node.js backend
